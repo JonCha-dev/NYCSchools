@@ -14,6 +14,15 @@
 		891DD49A2A7577450014A892 /* NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DD4992A7577450014A892 /* NYCSchoolsTests.swift */; };
 		891DD4A42A7577450014A892 /* NYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DD4A32A7577450014A892 /* NYCSchoolsUITests.swift */; };
 		891DD4A62A7577450014A892 /* NYCSchoolsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DD4A52A7577450014A892 /* NYCSchoolsUITestsLaunchTests.swift */; };
+		891DD4B32A7577650014A892 /* SchoolData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DD4B22A7577650014A892 /* SchoolData.swift */; };
+		891DD4B62A7577780014A892 /* SchoolService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DD4B42A7577780014A892 /* SchoolService.swift */; };
+		891DD4B72A7577780014A892 /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DD4B52A7577780014A892 /* SchoolViewModel.swift */; };
+		891DD4B92A7580670014A892 /* SATCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DD4B82A7580670014A892 /* SATCell.swift */; };
+		891DD4BD2A7582F80014A892 /* school_empty_file.json in Resources */ = {isa = PBXBuildFile; fileRef = 891DD4BA2A7582F70014A892 /* school_empty_file.json */; };
+		891DD4BE2A7582F80014A892 /* school_failure_file.json in Resources */ = {isa = PBXBuildFile; fileRef = 891DD4BB2A7582F70014A892 /* school_failure_file.json */; };
+		891DD4BF2A7582F80014A892 /* school_success_file.json in Resources */ = {isa = PBXBuildFile; fileRef = 891DD4BC2A7582F80014A892 /* school_success_file.json */; };
+		891DD4C22A758EA80014A892 /* sat_success_file.json in Resources */ = {isa = PBXBuildFile; fileRef = 891DD4C02A758EA80014A892 /* sat_success_file.json */; };
+		891DD4C32A758EA80014A892 /* sat_failure_file.json in Resources */ = {isa = PBXBuildFile; fileRef = 891DD4C12A758EA80014A892 /* sat_failure_file.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		891DD49F2A7577450014A892 /* NYCSchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYCSchoolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		891DD4A32A7577450014A892 /* NYCSchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolsUITests.swift; sourceTree = "<group>"; };
 		891DD4A52A7577450014A892 /* NYCSchoolsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		891DD4B22A7577650014A892 /* SchoolData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolData.swift; sourceTree = "<group>"; };
+		891DD4B42A7577780014A892 /* SchoolService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolService.swift; sourceTree = "<group>"; };
+		891DD4B52A7577780014A892 /* SchoolViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolViewModel.swift; sourceTree = "<group>"; };
+		891DD4B82A7580670014A892 /* SATCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATCell.swift; sourceTree = "<group>"; };
+		891DD4BA2A7582F70014A892 /* school_empty_file.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = school_empty_file.json; sourceTree = "<group>"; };
+		891DD4BB2A7582F70014A892 /* school_failure_file.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = school_failure_file.json; sourceTree = "<group>"; };
+		891DD4BC2A7582F80014A892 /* school_success_file.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = school_success_file.json; sourceTree = "<group>"; };
+		891DD4C02A758EA80014A892 /* sat_success_file.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sat_success_file.json; sourceTree = "<group>"; };
+		891DD4C12A758EA80014A892 /* sat_failure_file.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sat_failure_file.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +112,14 @@
 		891DD4872A7577430014A892 /* NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
+				891DD4B22A7577650014A892 /* SchoolData.swift */,
+				891DD4B42A7577780014A892 /* SchoolService.swift */,
+				891DD4B52A7577780014A892 /* SchoolViewModel.swift */,
 				891DD4882A7577430014A892 /* NYCSchoolsApp.swift */,
 				891DD48A2A7577430014A892 /* ContentView.swift */,
 				891DD48C2A7577440014A892 /* Assets.xcassets */,
 				891DD48E2A7577440014A892 /* Preview Content */,
+				891DD4B82A7580670014A892 /* SATCell.swift */,
 			);
 			path = NYCSchools;
 			sourceTree = "<group>";
@@ -113,6 +135,11 @@
 		891DD4982A7577450014A892 /* NYCSchoolsTests */ = {
 			isa = PBXGroup;
 			children = (
+				891DD4C12A758EA80014A892 /* sat_failure_file.json */,
+				891DD4C02A758EA80014A892 /* sat_success_file.json */,
+				891DD4BA2A7582F70014A892 /* school_empty_file.json */,
+				891DD4BB2A7582F70014A892 /* school_failure_file.json */,
+				891DD4BC2A7582F80014A892 /* school_success_file.json */,
 				891DD4992A7577450014A892 /* NYCSchoolsTests.swift */,
 			);
 			path = NYCSchoolsTests;
@@ -240,6 +267,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				891DD4C22A758EA80014A892 /* sat_success_file.json in Resources */,
+				891DD4BE2A7582F80014A892 /* school_failure_file.json in Resources */,
+				891DD4C32A758EA80014A892 /* sat_failure_file.json in Resources */,
+				891DD4BD2A7582F80014A892 /* school_empty_file.json in Resources */,
+				891DD4BF2A7582F80014A892 /* school_success_file.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				891DD4B32A7577650014A892 /* SchoolData.swift in Sources */,
+				891DD4B72A7577780014A892 /* SchoolViewModel.swift in Sources */,
+				891DD4B92A7580670014A892 /* SATCell.swift in Sources */,
 				891DD48B2A7577430014A892 /* ContentView.swift in Sources */,
 				891DD4892A7577430014A892 /* NYCSchoolsApp.swift in Sources */,
+				891DD4B62A7577780014A892 /* SchoolService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

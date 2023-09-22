@@ -8,14 +8,44 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel:SchoolViewModel = SchoolViewModel(service: SchoolService())
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            ScrollView {
+                VStack(alignment: .leading) {
+                    switch viewModel.status {
+                    case .initial, .loading:
+                        Text("Loading...")
+                    case .error:
+                        Text("Error.")
+                    case .empty:
+                        Text("Nothing to load.")
+                    case .loaded:
+                        listView(viewModel.data)
+                    }
+                }
+                .padding(.horizontal)
+            }
+            .navigationTitle("Schools")
         }
-        .padding()
+        .onAppear {
+            viewModel.getSchools()
+        }
+    }
+    
+    private func listView(_ data:[SchoolData]) -> some View {
+        ForEach(data, id: \.self) { school in
+            NavigationLink {
+                SATCell(dbn: school.dbn)
+            } label: {
+                Text(school.school_name)
+                    .multilineTextAlignment(.leading)
+                Spacer()
+            }
+            .padding()
+            .border(Color.black)
+        }
     }
 }
 
